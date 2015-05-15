@@ -8,6 +8,10 @@
 
 #define DEBUG false
 
+//Disable Environment (bunnies)
+waitUntil {time > 0};
+enableEnvironment false;
+
 enableSaving [false, false];
 
 _descExtPath = str missionConfigFile;

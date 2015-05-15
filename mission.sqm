@@ -64,8 +64,8 @@ class Mission
 	randomSeed=7312376;
 	class Intel
 	{
-		briefingName="TOParma.com A3Wasteland Chernarus v2.1";
-		overviewText="TOP Wasteland Conquest Chernarus by TOPARMA.com - Core developed by A3Wasteland.com";
+		briefingName="A3Wasteland Chernarus by [TACX] Motavar v2.1";
+		overviewText="A3Wasteland Conquest Chernarus - Core developed by A3Wasteland.com";
 		resistanceWest=0;
 		startWeather=0.25;
 		startWind=0.099999994;
@@ -2824,9 +2824,10 @@ class Mission
 		};
 		class Item52
 		{
-			position[]={7985.5688,342.26416,7097.9189};
+			position[]={7975.3872,340.99042,7090.646};
 			name="Mission_21";
 			type="Empty";
+			angle=18.734959;
 		};
 		class Item53
 		{
