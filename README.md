@@ -1,7 +1,7 @@
 A3WASTELAND CHERNARUS by Motavar
 ====================
 
-VIDEO GAME: Arma 3
+VIDEO GAME: Arma 3<br>
 MISSION: A3Wasteland Chernarus
 GAME TYPE: Survival / Conquest warfare
 
