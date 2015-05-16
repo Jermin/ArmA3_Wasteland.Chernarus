@@ -1,4 +1,4 @@
-A3WASTELAND CHERNARUS by Motavar
+A3Wasteland Chernarus by Motavar
 ====================
 
 VIDEO GAME: Arma 3<br>
