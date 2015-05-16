@@ -8,8 +8,12 @@ GAME TYPE: Survival / Conquest warfare<br>
 AUTHOR: Motavar<br>
 EMAIL: Motavar@judgement.net<br>
 <br>
-LAUNCHER/PATCHER: Available @ www.TAC-X.com<br>
+LAUNCHER/PATCHER:<br>
+Available @ www.TAC-X.com<br>
 If you use the launcher/patcher I ask that you help seed the torrents.<br>
+<br>
+Server Admins or Windows 2008 R2 Users Please Note: 
+If you receive an error that you could not load Ragnar.dll you are required to install Visual Studio 2013 C++ Redistributable (32 bit). You will need to load the 32-bit files onto your x64 bit OS. The 64bit files do not contain the 32bit files required by the application when running in WOW mode.<br>
 <br>
 SERVER ADMINS:<br>
 <br>
