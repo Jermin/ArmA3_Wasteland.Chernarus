@@ -80,6 +80,11 @@ A3W_extDB_ConfigName = "A3W";      // Name of the connection config from extdb-c
 A3W_extDB_IniName = "a3wasteland"; // Name of the INI file in extDB\db_custom to be used
 A3W_extDB_Debug = 0;               // Log all queries to server RPT (0 = no, 1 = yes)
 
+// Server Naming
+A3W_serverName = "Your Server";		//Name of your server for Player HUD
+A3W_serverIP = "0.0.0.0";		    //IP address of your server for Player HUD
+A3W_serverWWW ="www.name.com";       //Website for your server
+
 // Spawning settings
 A3W_serverSpawning = 1;            // Vehicle, object, and loot spawning (0 = no, 1 = yes)
 A3W_vehicleSpawning = 1;           // If serverSpawning = 1, spawn vehicles in towns (0 = no, 1 = yes)

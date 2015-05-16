@@ -122,7 +122,10 @@ forEach
 	"A3W_tkAutoKickEnabled",
 	"A3W_tkKickAmount",
 	"A3W_donatorEnabled",
-	"A3W_customUniformEnabled"
+	"A3W_customUniformEnabled",
+	"A3W_serverName",
+	"A3W_serverIP",
+	"A3W_serverWWW"
 ];
 
 ["A3W_join", "onPlayerConnected", { [_id, _uid, _name] spawn fn_onPlayerConnected }] call BIS_fnc_addStackedEventHandler;

@@ -110,11 +110,13 @@ while {true} do
 	_hudActivityTextbox = _ui displayCtrl hud_activity_textbox_idc;
 	_hudServerTextbox = _ui displayCtrl hud_server_idc;
 	
-	_serverString = format ["<t color='#A0FFFFFF'>Server %1: A3Wasteland %2 : Server</t>", call A3W_extDB_ServerID, worldName];
-	//_serverString = format ["%1<br/><t color='#A0FFFFFF'>ts.toparma.com : TeamSpeak<br/>TOPARMA.COM : Website/Stats/Forum</t>",_serverString];
+	_serverString = format ["<t color='#A0FFFFFF'>%1: A3Wasteland %2</t>", A3W_serverName, worldName];
+	_serverString = format ["%1<br/><t color='#A0FFFFFF'>IP %2</t>", _serverString,  A3W_serverIP];
+	_serverString = format ["%1<br/><t color='#A0FFFFFF'>Website: %2</t>", _serverString, A3W_serverWWW];
+	
 	_hudServerTextbox ctrlSetStructuredText parseText _serverString;
 	_hudServerTextbox ctrlCommit 0;
-
+		
 	//Calculate Health 0 - 100
 	_health = ((1 - damage player) * 100) max 0;
 	_health = if (_health > 1) then { floor _health } else { ceil _health };

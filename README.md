@@ -11,8 +11,17 @@ EMAIL: Motavar@judgement.net<br>
 LAUNCHER/PATCHER: Available @ www.TAC-X.com<br>
 If you use the launcher/patcher I ask that you help seed the torrents.<br>
 <br>
-SERVER STARTUP ORDER:<br>
+SERVER ADMINS:<br>
+<br>
+Server Mod Startup Order:
 -mod=@RHSAFRF;@RHSUSAF;@ASDG_JR;@hlcmods;@AllInArmaTerrainPack<br>
+<br>
+A3Wasteland Settings Directory (changes for player HUD):
+In your A3wasteland settingd directory add the following to your main_config.sqf<br>
+// Server Naming<br>
+A3W_serverName = "Your Server Name";	//Name of your server for Player HUD<br>
+A3W_serverIP = "127.0.0.1";		       //IP address of your server for Player HUD<br>
+A3W_serverWWW = "www.your_web_site.com";	//Server HTTP address<br>
 <br>
 <br>
 *SERVER ADMINS - WARNING NOTE:<br>
