@@ -9,10 +9,11 @@ AUTHOR: Motavar<br>
 EMAIL: Motavar@judgement.net<br>
 <br>
 LAUNCHER/PATCHER: Available @ www.TAC-X.com<br>
-* If you use the launcher/patcher I ask that you help seed the torrents.<br>
+If you use the launcher/patcher I ask that you help seed the torrents.<br>
+
 <br>
 <br>
-SERVER ADMINS - WARNING NOTE:<br>
+*SERVER ADMINS - WARNING NOTE:<br>
 A3Wasteland Chernarus does not support "Samatra Wasteland Chernarus" versions of RHS/HLC/AIA/JR mods as they are not signed by the original authors.<br>
 Take warning if you are using their files for the mission type, your server is subject to compromise using unsigned files. 
 <br>
