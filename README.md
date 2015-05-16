@@ -9,7 +9,7 @@ AUTHOR: Motavar<br>
 EMAIL: Motavar@judgement.net<br>
 <br>
 LAUNCHER/PATCHER: Available @ www.TAC-X.com<br>
-If you use the launcher/patcher I ask that you help seed the torrents.<br>
+* If you use the launcher/patcher I ask that you help seed the torrents.<br>
 <br>
 <br>
 SERVER ADMINS - WARNING NOTE:<br>
@@ -57,6 +57,6 @@ CREDITS: <br>
 Core by A3Wasteland.com<br>
 Code Modified by TOPARMA.COM<br>
 Chernarus port by TAC-X.com<br>
-Help and suggestions from many member of the open Arma community.<br>
+Help and suggestions from many members of the open Arma community.<br>
 <br>
 <br>
