@@ -64,8 +64,8 @@ class Mission
 	randomSeed=7312376;
 	class Intel
 	{
-		briefingName="A3Wasteland Chernarus by [TACX] Motavar v2.1";
-		overviewText="A3Wasteland Conquest Chernarus - Core developed by A3Wasteland.com";
+		briefingName="A3Wasteland Chernarus by Motavar v2.1";
+		overviewText="A3Wasteland Chernarus - Core developed by A3Wasteland.com";
 		resistanceWest=0;
 		startWeather=0.25;
 		startWind=0.099999994;

@@ -10,7 +10,9 @@ EMAIL: Motavar@judgement.net<br>
 <br>
 LAUNCHER/PATCHER: Available @ www.TAC-X.com<br>
 If you use the launcher/patcher I ask that you help seed the torrents.<br>
-
+<br>
+SERVER STARTUP ORDER:<br>
+-mod=@RHSAFRF;@RHSUSAF;@ASDG_JR;@hlcmods;@AllInArmaTerrainPack<br>
 <br>
 <br>
 *SERVER ADMINS - WARNING NOTE:<br>
