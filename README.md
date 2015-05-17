@@ -44,7 +44,7 @@ exit out<br>
 <<<br>
 <br>
 <br>
-<b>A3WASTELAND SETTINGS SETUP:</b>
+<b>A3WASTELAND SETTINGS SETUP:</b><br>
 Copy the "A3Wasteland_settings" directory to the Arma directory (where you have your arma3.exe)<br>
 This contains the mission settings stored in the "main_config.sqf"<br>
 <br>
@@ -54,6 +54,7 @@ open extDB2-v55.rar file, go into the windows folder and extract the files to th
 Switch over to your Arma 3 directory<br>
 Go into the @extDB2 directory and edit extdb-config.ini file<br>
 configure your passwords <br>
+<br>
 Change the following:<br>
 Version = 3<br>
 to<br>
@@ -75,13 +76,11 @@ Name = a3wasteland<br>
 Username = root<br>
 Password = whatever your pw is for db<br>
 <br>
-<br>
 save the file and exit<br>
 <br>
 <br>
 <b>SQL CUSTOM FOLDER SETUP:</b><br>
 Copy the "sql_custom" directory to your Arma 3 @extDB2/extDB/ folder. Overwrite the folder that is in there<br>
-<br>
 <br>
 <br>
 <br>SERVER EXE SETUP:</b><br>
