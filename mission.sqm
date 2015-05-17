@@ -34,6 +34,7 @@ class Mission
 		"rhs_c_t72",
 		"rhs_c_sprut",
 		"rhs_c_trucks",
+		"rhs_c_tanks",
 		"rhsusf_c_m1a1",
 		"hlcweapons_ar15",
 		"hlcweapons_mp5",
@@ -64,7 +65,7 @@ class Mission
 	randomSeed=7312376;
 	class Intel
 	{
-		briefingName="A3Wasteland Chernarus by Motavar v2.1";
+		briefingName="A3Wasteland Chernarus extDB2 by Motavar v2.2";
 		overviewText="A3Wasteland Chernarus - Core developed by A3Wasteland.com";
 		resistanceWest=0;
 		startWeather=0.25;

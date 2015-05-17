@@ -6,7 +6,7 @@
 
 #include "functions.sqf"
 
-private ["_strToSide", "_maxLifetime", "_maxLifetimeTier2", "_maxLifetimeTier3", "_isWarchestEntry", "_isBeaconEntry", "_worldDir", "_methodDir", "_objCount", "_objects", "_exclObjectIDs"];
+private ["_strToSide", "_maxLifetime", "_isWarchestEntry", "_isBeaconEntry", "_worldDir", "_methodDir", "_objCount", "_objects", "_exclObjectIDs"];
 
 _strToSide =
 {
@@ -22,8 +22,6 @@ _strToSide =
 };
 
 _maxLifetime = ["A3W_objectLifetime", 0] call getPublicVar;
-_maxLifetimeTier2 = ["TOP_objectLifetime_Tier2", 0] call getPublicVar;
-_maxLifetimeTier3 = ["TOP_objectLifetime_Tier3", 0] call getPublicVar;
 
 _isWarchestEntry = { [_variables, "a3w_warchest", false] call fn_getFromPairs };
 _isBeaconEntry = { [_variables, "a3w_spawnBeacon", false] call fn_getFromPairs };
@@ -166,7 +164,7 @@ _exclObjectIDs = [];
 				{
 					_bpack = _x select 0;
 
-					if (!(_bpack isKindOf "Weapon_Bag_Base") || {_bpack isKindOf "B_UAV_01_backpack_F"}) then
+					if (!(_bpack isKindOf "Weapon_Bag_Base") || {{_bpack isKindOf _x} count ["B_UAV_01_backpack_F", "B_Static_Designator_01_weapon_F", "O_Static_Designator_02_weapon_F"] > 0}) then
 					{
 						_obj addBackpackCargoGlobal _x;
 					};

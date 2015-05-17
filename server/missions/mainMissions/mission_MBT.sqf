@@ -28,7 +28,13 @@ _setupVars =
 	"rhsusf_m1a2sep1wd_usarmy",
 	"rhsusf_m1a2sep1d_usarmy",
 	"rhsusf_m1a2sep1tuskiwd_usarmy",
-	"rhsusf_m1a2sep1tuskid_usarmy"
+	"rhsusf_m1a2sep1tuskid_usarmy",
+	"rhs_t80",
+	"rhs_t80a",
+	"rhs_t80b",
+	"rhs_t80bk",
+	"rhs_t80bv",
+	"rhs_t80bvk"
 	] call BIS_fnc_selectRandom;
 
 	_missionType = "Main Battle Tank";

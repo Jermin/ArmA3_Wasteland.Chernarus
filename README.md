@@ -15,13 +15,86 @@ If you use the launcher/patcher I ask that you help seed the torrents.<br>
 Server Admins or Windows 2008 R2 Users Please Note: 
 If you receive an error that you could not load Ragnar.dll you are required to install Visual Studio 2013 C++ Redistributable (32 bit). You will need to load the 32-bit files onto your x64 bit OS. The 64bit files do not contain the 32bit files required by the application when running in WOW mode.<br>
 <br>
-SERVER ADMINS:<br>
+<b>WINDOWS INSTALLATION:</b><br>
 <br>
-Server Mod Startup Order:
+YOU WILL NEED THE FOLLOWING TO RUN:<br>
+- User the TAP patcher to grab the following mods:<br>
+RHS v3.7, HLC mods from 4/2015, ASDG_JR (joint rails from 4/15), All in Arma Terrain Pack 1.1.2015 w/patch<br>
+- DATABSE: MySQL community server v5.6 (Install MySql workbench during the install process)<br>
+- Torndeco's extDB2 (release v55+): https://github.com/Torndeco/extDB2/releases<br>
+<br>
+<b>DATABASE SETUP:</b><br>
+install mysql<br>
+copy "a3wasteland_db_v2.03.sql" to your mysql bin directory (where your mysql.exe is located)<br>
+example: C:\Program Files (x86)\MySQL\MySQL Server 5.6\bin<br>
+login to mysql<br>
+<br>
+example:<br>
+>><br>
+C:\>cd "Program Files (x86)<br>
+C:\Program Files (x86)>cd MySQL<br>
+C:\Program Files (x86)\MySQL>cd MySQL Server 5.6<br>
+C:\Program Files (x86)\MySQL\MySQL Server 5.6>cd bin<br>
+C:\Program Files (x86)\MySQL\MySQL Server 5.6\bin>mysql -u root -p<br>
+Enter password: your database password<br>
+<br>
+Create the database:<br>
+mysql> source a3wasteland_db_v2.03.sql<br>
+exit out<br>
+<<<br>
+<br>
+<br>
+<b>A3WASTELAND SETTINGS SETUP:</b>
+Copy the "A3Wasteland_settings" directory to the Arma directory (where you have your arma3.exe)<br>
+This contains the mission settings stored in the "main_config.sqf"<br>
+<br>
+<br>
+<b>INSTALL extDB2</b><br>
+open extDB2-v55.rar file, go into the windows folder and extract the files to the Arma3 directory (where you have your arma3.exe)<br>
+Switch over to your Arma 3 directory<br>
+Go into the @extDB2 directory and edit extdb-config.ini file<br>
+configure your passwords <br>
+Change the following:<br>
+Version = 3<br>
+to<br>
+Version = 4<br>
+<br>
+find the following<br>
+>><br>
+[MySQL_Example]<br>
+Type = MySQL<br>
+Name = Database_Name<br>
+<br>
+Username = root<br>
+Password = password<br>
+<<<br>
+Change to:<br>
+[A3W]<br>
+Type = MySQL<br>
+Name = a3wasteland<br>
+Username = root<br>
+Password = whatever your pw is for db<br>
+<br>
+<br>
+save the file and exit<br>
+<br>
+<br>
+<b>SQL CUSTOM FOLDER SETUP:</b><br>
+Copy the "sql_custom" directory to your Arma 3 @extDB2/extDB/ folder. Overwrite the folder that is in there<br>
+<br>
+<br>
+<br>
+<br>SERVER EXE SETUP:</b><br>
+<br>
+Your Server Mod Startup Order:<br>
 -mod=@RHSAFRF;@RHSUSAF;@ASDG_JR;@hlcmods;@AllInArmaTerrainPack<br>
 <br>
+EXAMPLE SERVER STARTUP:<br>
+"C:\Program Files (x86)\Steam\SteamApps\common\Arma 3\arma3server.exe" "-profiles=c:\Arma3\A3Master" -config=server.cfg -world=empty -mod=@RHSAFRF;@RHSUSAF;@ASDG_JR;@hlcmods;@AllInArmaTerrainPack;@extDB2 -autoInit
+<br>
+<br>
 A3Wasteland Settings Directory (changes for player HUD):
-In your A3wasteland settingd directory add the following to your main_config.sqf<br>
+In your A3wasteland settings directory add the following to your main_config.sqf<br>
 // Server Naming<br>
 A3W_serverName = "Your Server Name";	//Name of your server for Player HUD<br>
 A3W_serverIP = "127.0.0.1";		       //IP address of your server for Player HUD<br>

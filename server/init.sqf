@@ -147,6 +147,9 @@ _vehicleSavingOn = (_purchasedVehicleSavingOn || _purchasedVehicleSavingOn);
 
 _setupPlayerDB = scriptNull;
 
+
+diag_log "[INFO] ### Checking extDB2 startup";	
+
 // Do we need any persistence?
 if (_playerSavingOn || _objectSavingOn || _vehicleSavingOn) then
 {
@@ -158,20 +161,29 @@ if (_playerSavingOn || _objectSavingOn || _vehicleSavingOn) then
 	// extDB
 	if (_savingMethod == "extDB") then
 	{
-		_version = "extDB" callExtension "9:VERSION";
+	diag_log "[INFO] ### extDB2: pull version";	
+		_version = "extDB2" callExtension "9:VERSION";
 
-		if (parseNumber _version >= 20) then
+		diag_log "[INFO] ### extDB2: check version";	
+		if (parseNumber _version >= 49) then
 		{
+		    diag_log "[INFO] ### extDB2: version >49 section 1";	
 			A3W_savingMethodName = compileFinal "'extDB'";
+			diag_log "[INFO] ### extDB2: version >49 section 2";	
 			A3W_savingMethodDir = compileFinal "'extDB'";
+			diag_log "[INFO] ### extDB2: version >49 section 2";	
 			A3W_extDB_ConfigName = compileFinal str (["A3W_extDB_ConfigName", "A3W"] call getPublicVar);
+			diag_log "[INFO] ### extDB2: version >49 section 3";	
 			A3W_extDB_IniName = compileFinal str (["A3W_extDB_IniName", "a3wasteland"] call getPublicVar);
+			diag_log "[INFO] ### extDB2: version >49 section 4";	
+			A3W_extDB_RconName = compileFinal str (["A3W_extDB_RconName", "A3W"] call getPublicVar);
+			diag_log "[INFO] ### extDB2: version >49 section 5";	
 		}
 		else
 		{
 			if (_version != "") then
 			{
-				diag_log format "[INFO] ### extDB startup cancelled!";
+				diag_log format "[INFO] ### extDB2 startup cancelled!";
 				diag_log format ["[INFO] ### A3W requires extDB v20 or later: v%1 detected", _result];
 			}
 			else
