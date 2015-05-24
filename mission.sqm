@@ -65,7 +65,7 @@ class Mission
 	randomSeed=7312376;
 	class Intel
 	{
-		briefingName="A3Wasteland Chernarus extDB2 by Motavar v2.2";
+		briefingName="A3Wasteland Chernarus v2.3 by Motavar";
 		overviewText="A3Wasteland Chernarus - Core developed by A3Wasteland.com";
 		resistanceWest=0;
 		startWeather=0.25;
